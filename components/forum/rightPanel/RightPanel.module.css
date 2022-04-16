@@ -1,0 +1,96 @@
+.right {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    padding: 0 20px;
+    right: 0;
+    border-left: 1px solid var(--border);
+    overflow-y: scroll;
+}
+
+.right::-webkit-scrollbar {
+    display: none;
+}
+
+.right {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.usersContainer {
+    margin-bottom: 10px;
+}
+
+.search input {
+    margin-top: 20px;
+    width: 80%;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search input:focus {
+    border: 1px solid rgb(119, 119, 119);
+    outline: none;
+}
+
+.search button {
+    width: 20%;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search button:hover {
+    background: var(--primary-color);
+    cursor: pointer;
+    color: white;
+}
+
+.right .statBox {
+    background: rgb(239, 243, 255);
+    background: linear-gradient(
+        90deg,
+        rgba(239, 243, 255, 0.5) 0%,
+        rgba(244, 239, 255, 0.5) 50%,
+        rgba(224, 226, 239, 0.5) 100%,
+        rgba(0, 212, 255, 0.5) 100%
+    );
+    margin: 10px 0 70px 0;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
+}
+
+.statBox ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.statBox ul li {
+    padding: 10px;
+    margin: 5px;
+    border-left: 5px solid #4a7aff;
+}
+
+.statBox ul li:nth-child(odd) {
+    border-left: 5px solid #ff6060;
+}
+
+.right h3 {
+    margin: 0;
+    border-bottom: 1px solid #9900ff;
+}
+
+@media (max-width: 800px) {
+    .right {
+        display: none;
+    }
+}

@@ -1,0 +1,145 @@
+.container {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+}
+
+.container h1 {
+    font-weight: 600;
+}
+
+.main {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .left {
+    z-index: -1;
+}
+
+.main .right {
+    z-index: -1;
+    width: 60%;
+}
+
+.main button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    padding: 1rem;
+    margin: 20px 20px 20px 0;
+}
+
+.main button:hover {
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.main .shape_container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main .shape {
+    float: right;
+    position: relative;
+    top: -120px;
+    right: 0;
+    z-index: -1;
+    opacity: 0.8;
+    width: 40%;
+    height: 80vh;
+    border-radius: 50% 0 0 50%;
+    background: var(--highlight-color);
+}
+
+.left .shape {
+    float: left;
+    left: 0;
+    right: 0;
+    border-radius: 0 50% 50% 0;
+}
+
+.main .shape_right {
+    position: relative;
+    z-index: -1;
+    top: 100px;
+    left: 0;
+    width: 40%;
+    height: 80vh;
+    border-radius: 50% 0 0 50%;
+    background: #fbf7ff;
+}
+
+.title a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.title a:hover {
+    text-decoration: underline;
+}
+
+.title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+}
+
+.description {
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.logo {
+    height: 1em;
+    margin-left: 0.5rem;
+}
+
+.snapshot {
+    width: 80%;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.snapshot_overlap {
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+    width: 80%;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 750px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .main .left .snapshot {
+        width: 100%;
+    }
+
+    .main .right {
+        width: 100%;
+    }
+
+    .main .shape {
+        display: none;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+}

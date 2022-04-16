@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --primary-color: #272d6d;
+    --blue: #3d5af1;
+    --red: #ff3553;
+    --yellow: #ffda35;
+    --green: #13b775;
+    --light-blue: #2681ae;
+    --teal: #62c8d0;
+    --highlight-color: #e8ebfb;
+    --border: #eaeaea;
+    --text-color: rgb(54, 54, 54);
+}
+
+* {
+    transition: 0.3s all;
+    outline: none;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: apple-system, BlinkMacSystemFont, 'Segoe UI', 'Liberation Sans',
+        'Montserrat', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: 500;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 2rem;
+    color: black;
+    margin: 0;
+}
+
+.btn {
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-small {
+    border: none;
+    font-size: 0.7em;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-alt {
+    border: 1px solid rgb(207, 207, 207);
+    background: white;
+    color: black;
+}
+
+.btn-alt:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
+    color: var(--primary-color);
+}
+
+.btn-secondary {
+    background-color: #1edb3d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
+    color: #1edb3d;
+}
+
+.tag {
+    height: 20px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    padding: 10px 12px;
+    color: white;
+    background: var(--green);
+    border-radius: 5px;
+}
+
+.comments-container {
+    background: var(--highlight-color);
+    border-radius: 5px;
+}
+
+.time {
+    margin: 0;
+    font-size: 0.8em;
+    color: gray;
+}
+
+.link:hover {
+    cursor: pointer;
+    color: var(--blue);
+}
+
+/* Tooltip container */
+.tooltip {
+    color: var(--green);
+    position: relative;
+    display: inline-block;
+}
+
+.tooltiptext {
+    font-size: 0.5em;
+    visibility: hidden;
+    width: 100px;
+    background-color: var(--text-color);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+@media (max-width: 800px) {
+    .hide-mob {
+        display: none;
+    }
+
+    .LayoutMain {
+        margin-bottom: 60px;
+    }
+}

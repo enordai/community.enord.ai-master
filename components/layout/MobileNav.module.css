@@ -1,0 +1,55 @@
+.footer {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .footer {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        overflow: hidden;
+        width: 100%;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
+    }
+
+    .searchBar {
+        box-shadow: 0 -5px 10px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .searchBar input {
+        width: 80%;
+        padding: 10px 20px;
+        border: 1px solid rgb(218, 218, 218);
+    }
+
+    .searchBar button {
+        width: 20%;
+        padding: 10px 20px;
+        border-radius: 0;
+    }
+
+    .bottomNav {
+        padding: 10px 20px;
+        font-size: 0.9em;
+        width: 100%;
+        background: white;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .bottomNavIcon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottomNavIcon:hover {
+        cursor: pointer;
+        color: var(--primary-color);
+    }
+
+    .bottomNavIcon p {
+        margin: 0;
+    }
+}

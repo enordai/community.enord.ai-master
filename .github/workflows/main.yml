@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  # This workflow will build the project and check for any issues or error
+  # also
+  # this workflow is for checking code format
+  checks:
+    name: "Build"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Building Project
+        run: yarn build # check wheather the project's files are correctly formatted or not...
+
+      - name: Prettier Format Check
+        run: yarn run prettier -c pages # check wheather the project's files are correctly formatted or not...
+
+# end of workflows.

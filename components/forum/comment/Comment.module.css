@@ -1,0 +1,20 @@
+.itemContainer {
+    height: 50px;
+    border-top: 1px solid #272d6d2c;
+    margin-left: 30px;
+    padding: 0 5px;
+    font-size: 0.8em;
+    display: flex;
+}
+
+.left {
+    margin-right: 50px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+    color: var(--light-blue);
+}

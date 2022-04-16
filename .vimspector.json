@@ -1,0 +1,17 @@
+{
+    "configurations": {
+        "run": {
+            "adapter": "vscode-node",
+            "configuration": {
+                "request": "launch",
+                "stopOnEntry": true,
+                "protocol": "auto",
+                "console": "integratedTerminal",
+                "skipFiles": ["<node_modules>/**/*.js"],
+                "program": "${workspaceRoot}/test.js",
+                "cwd": "${workspaceRoot}"
+            }
+        },
+        "attach": {}
+    }
+}

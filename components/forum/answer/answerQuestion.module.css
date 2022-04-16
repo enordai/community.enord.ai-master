@@ -1,0 +1,11 @@
+.answer_form textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    border-radius: 3px;
+}
+
+.answer_form textarea:focus {
+    outline: none;
+    border: 1px solid blue;
+}

@@ -1,0 +1,41 @@
+.main_container {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.center {
+    margin: 0 15px;
+    width: 60%;
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.center p {
+    margin: 0 0 5px 0;
+}
+
+.inactiveIcon {
+    color: rgb(100, 100, 100);
+}
+
+.main {
+    padding: 5rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .main_container {
+        font-size: 0.8em;
+    }
+    .center {
+        width: 100%;
+        padding: 5px 10px;
+    }
+}

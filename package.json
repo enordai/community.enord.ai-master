@@ -1,0 +1,70 @@
+{
+    "name": "enord.ai",
+    "version": "0.0.1",
+    "private": true,
+    "description": "Community website for enord.ai website",
+    "author": "sobhanbera, shivprashant777",
+    "scripts": {
+        "start": "next dev",
+        "build": "next build",
+        "nxt:start": "next start",
+        "lint": "next lint",
+        "prettier-check": "yarn prettier -c pages styles",
+        "prettier-format": "yarn prettier --write pages styles && git status"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.36",
+        "@fortawesome/free-brands-svg-icons": "^5.15.4",
+        "@fortawesome/free-solid-svg-icons": "^5.15.4",
+        "@fortawesome/react-fontawesome": "^0.1.16",
+        "axios": "^0.24.0",
+        "bcrypt": "^5.0.1",
+        "dayjs": "^1.10.7",
+        "dotenv": "^10.0.0",
+        "jsonwebtoken": "^8.5.1",
+        "mysql": "^2.18.1",
+        "next": "11.1.2",
+        "next-transpile-modules": "^9.0.0",
+        "nodemailer": "^6.7.0",
+        "public-ip": "^4.0.4",
+        "react": "17.0.2",
+        "react-device-detect": "^2.1.2",
+        "react-dom": "17.0.2",
+        "react-markdown": "^7.1.0",
+        "react-mde": "^11.5.0",
+        "react-syntax-highlighter": "^15.4.5",
+        "remark-gfm": "1.0.0",
+        "remove-markdown": "^0.3.0"
+    },
+    "devDependencies": {
+        "eslint": "7.32.0",
+        "eslint-config-next": "11.1.2",
+        "prettier": "2.4.1"
+    },
+    "homepage": "https://github.com/sobhanbera/community.enord.ai",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sobhanbera/community.enord.ai.git"
+    },
+    "resolutions": {
+        "@types/react": "^17"
+    },
+    "jest": {
+        "preset": "react-native",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ]
+    },
+    "keywords": [
+        "ai",
+        "enord",
+        "community",
+        "enord.ai",
+        "community.enord.ai"
+    ]
+}

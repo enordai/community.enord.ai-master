@@ -1,0 +1,60 @@
+.itemContainer {
+    margin: 10px;
+    display: flex;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.itemContainer:hover {
+    background: rgb(226, 241, 255);
+    cursor: pointer;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.22);
+}
+
+.itemContainer .right {
+    align-items: center;
+    width: 100%;
+    margin: 5px 10px;
+}
+
+.itemContainer .right p {
+    list-style-type: none;
+    text-align: center;
+    margin: 2.5px;
+}
+
+.itemContainer .left {
+    margin: 0 10px;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemContainer .left .img {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+.lightp {
+    margin: 0;
+    font-size: 0.7em;
+    color: gray;
+}
+
+@media (max-width: 750px) {
+    .itemContainer {
+        margin: 0 1rem;
+    }
+    .itemContainer ul {
+        padding: 0;
+    }
+    .itemContainer li {
+        margin: 0;
+    }
+}
